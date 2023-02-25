@@ -11,16 +11,15 @@ LINK_BASE = "" #Link base para scraping
 
 # Headers para a autenticação / Definir no Functions.py tambem.
 cabecalho = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 OPR/90.0.4480.117',
-            'cookie': '_ga=GA1.1.727667681.1662658727; __gads=ID=64119310dfc77fa7-22fa62d42eb400a5:T=1663292406:RT=1663292406:S=ALNI_Ma7EH0u3xx_54AePPAlLzdyuFQfFA; __gpi=UID=0000096a389932d2:T=1663292406:RT=1663292406:S=ALNI_MZ6Q1Fyz1IAeMntjJNy71fHQ6OQsw; FCNEC=[["AKsRol-0_juf8lAAw_h5JfkqH83RUqyQDjMJcdMGUj2jxUaF_J5xngwAzW8SCWIpUnODPdn6xoDDCZaSw2RAuwoB0MgPhlwesfDmHl-Cadw_JQgaTbcHxSA9A5iKYO-yS3pvydjzBiNfWhR7Ag-EBEW9si7eZ3ezFw=="],null,[]]; __atuvc=1|37,26|38,70|39,10|40; sid=63nktffphrd31h87koqecdtq81; tz=America/Sao_Paulo; cf_chl_2=686153ab5835818; cf_chl_prog=x15; cf_clearance=f14166804562377d001098853c53a3cd54819b1b-1667054291-0-150; _ga_1LTT3CXFKZ=GS1.1.1667054290.163.1.1667054316.0.0.0'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0',
+            'cookie': '_ga=GA1.1.1416259687.1676299727; cookie_consent=1; SLG_G_WPT_TO=pt; SLG_GWPT_Show_Hide_tmp=1; SLG_wptGlobTipTmp=1; cf_clearance=gqbQdGT7CQ7lKW7eNGnQb1LS3GHDABcbqwdi0ApYlZA-1677349635-0-160; sid=ms707fr76ddk72bm933t6dtds4; tz=America/Sao_Paulo; _ga_1LTT3CXFKZ=GS1.1.1677349638.3.1.1677349703.0.0.0'
             }
 
-
-respost = requests.get(LINK_BASE+"/cs/table-tennis", headers=cabecalho)
+conteudo = requests.get(LINK_BASE+"/cs/table-tennis", headers=cabecalho)
 
 
 # Pegando conteúdo
-conteudo = respost.content
+conteudo = conteudo.content
 
 
 # Melhorando visualização do retorno
