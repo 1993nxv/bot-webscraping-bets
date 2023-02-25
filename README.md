@@ -12,10 +12,10 @@
 </ul>
 
 <h2>Visualização no Terminal</h2>
-<p>Incluir uma imagem do terminal exibindo a execução do script.</p>
+<img src="https://github.com/1993nxv/bot-webscraping-bets/blob/main/img/terminal.png"></img>
 
 <h2>Sinal enviado no Grupo do Telegram</h2>
-<p>Incluir uma imagem do grupo do Telegram exibindo o sinal enviado.</p>
+<img src="https://github.com/1993nxv/bot-webscraping-bets/blob/main/img/telegram.png"></img>
 
 <h3>Projeto utiliza:</h3>
 <ul>
